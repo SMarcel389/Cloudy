@@ -3,3 +3,120 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: #101828;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    align-items: center;
+}
+body>div{
+    min-width: 80%;
+   
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+
+body>.header{
+    display: flex;    
+}
+.header-img{
+    height: 150px;
+    margin-right: 40px;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    height: 30px;
+
+}
+.searchbar{
+    flex-wrap: nowrap;
+    border-radius: 25px;
+    flex: auto;
+    max-width: 600px;
+    display: flex;
+    height: 2.5rem;
+    margin: 10px 0px 10px 0px;
+    
+}
+.searchbar>input{
+    flex: auto;
+    border: none;
+    border: 2px solid #101828;
+    border-radius: 25px 0px 0px 25px;
+    border-right: none;
+    height: 2.5rem;
+    padding-left: 10px;
+    
+}
+input[type="text"]:focus {
+    /* This step is optional but good for context.
+       It helps confirm the input is actually focused. */
+    outline: none;
+    border: 2px solid #1249b8;
+    border-right: none;
+}
+
+
+
+.searchbar>button{
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    padding: 0px 10px;
+    height: 2.5rem;
+    background-color: #101828;
+}
+
+button>img{
+    height: 32px;
+    
+}
+
+.main{
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    gap: 50px;
+    max-height: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.current{
+    flex-grow: 2;
+    min-width: 460px;
+    max-width: 600px;
+
+    display: flex;
+    
+    
+}
+.current>img{
+    max-width: 50%;
+    
+}
+.currentInfo>h1:first-child{
+    white-space: nowrap;
+    
+}
+
+
+.details{
+    flex-grow: 1;
+    min-width: 125px;
+    max-width: 300px;
+}
+.current,
+.details{
+    color: white;
+    background-color: #101828;
+    border-radius: 25px;
+    padding: 30px;
+}
