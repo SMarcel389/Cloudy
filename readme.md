@@ -1,0 +1,1 @@
+Szia ez itt egy readme file
