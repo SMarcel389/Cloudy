@@ -1,1 +1,1 @@
-Szia ez itt egy readme file
+Szia ez itt egy readme file amit én szerkesztettem.
